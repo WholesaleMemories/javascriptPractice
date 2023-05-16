@@ -1,21 +1,17 @@
 let usr = prompt("Who's there?");
 
 if (usr == "Admin") {
-    let pass  = prompt("Password?");
+    let pass = prompt("Password?");
 
     if (pass == "TheMaster") {
         alert("Welcome!");
-    }
-    else if (pass == null || undefined) {
+    } else if (pass == null || pass === "") {
         alert("Canceled");
-    }
-    else {
+    } else {
         alert("Wrong password");
     }
-} 
-else if (usr == null || undefined) {
+} else if (usr == null || usr === "") {
     alert("Canceled");
-}
-else  {
+} else {
     alert("I don't know you");
 }
